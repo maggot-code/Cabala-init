@@ -2,11 +2,11 @@
  * @Author: maggot-code
  * @Date: 2020-12-22 22:59:14
  * @LastEditors: maggot-code
- * @LastEditTime: 2020-12-22 23:03:21
+ * @LastEditTime: 2020-12-23 15:02:25
  * @Description: file content
 -->
 <template>
-    <div>应用模板</div>
+    <div class="mg-template">应用模板</div>
 </template>
 
 <script>

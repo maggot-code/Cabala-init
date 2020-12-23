@@ -2,7 +2,7 @@
  * @Author: maggot-code
  * @Date: 2020-12-23 13:16:01
  * @LastEditors: maggot-code
- * @LastEditTime: 2020-12-23 14:10:43
+ * @LastEditTime: 2020-12-23 15:01:50
  * @Description: file content
  */
 module.exports = (api, options, rootOptions) => {
@@ -42,5 +42,12 @@ module.exports = (api, options, rootOptions) => {
             "vue-template-compiler": "^2.6.12"
         }
     });
+    // 删除 vue-cli3 默认目录
+    api.render(files => {
+        Object.keys(files)
+        .filter(path => path.startsWith('src/') || path.startsWith('public/'))
+        .forEach(path => delete files[path])
+        console.log(Object.keys(files))
+    })
     api.render('./template');
 }
