@@ -2,7 +2,7 @@
  * @Author: maggot-code
  * @Date: 2020-12-22 21:56:18
  * @LastEditors: maggot-code
- * @LastEditTime: 2020-12-23 11:18:43
+ * @LastEditTime: 2020-12-23 14:33:01
  * @Description: file content
  */
 module.exports = {
@@ -18,9 +18,9 @@ module.exports = {
     parser: 'babel-eslint'
   },
   rules: {
-    indent: ['error', 4],
-    semi: 'off',
-    quotes: 'off',
+    'indent': ['error', 4],
+    'semi': 'off',
+    'quotes': 'off',
     'comma-dangle': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
@@ -34,7 +34,6 @@ module.exports = {
     'eol-last': 'off',
     'prefer-const': 'off',
     "no-extend-native": 'off',
-    'indent': 'off',
     'eqeqeq': 'off'
   }
 }
