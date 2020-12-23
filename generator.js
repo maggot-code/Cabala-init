@@ -2,7 +2,7 @@
  * @Author: maggot-code
  * @Date: 2020-12-23 13:16:01
  * @LastEditors: maggot-code
- * @LastEditTime: 2020-12-23 13:59:29
+ * @LastEditTime: 2020-12-23 14:10:43
  * @Description: file content
  */
 module.exports = (api, options, rootOptions) => {
@@ -42,5 +42,5 @@ module.exports = (api, options, rootOptions) => {
             "vue-template-compiler": "^2.6.12"
         }
     });
-    api.render('../template');
+    api.render('./template');
 }
